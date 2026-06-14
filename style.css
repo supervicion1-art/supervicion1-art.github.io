@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+header h1{
+    font-size:4rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+    animation:fadeIn 1s ease;
+}
+
+header p{
+    font-size:1.2rem;
+    max-width:700px;
+    color:#cbd5e1;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(10px);
+    z-index:999;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:90%;
+    max-width:1000px;
+    background:#1e293b;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 0 25px rgba(0,0,0,.3);
+    transition:.35s ease;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.card h3{
+    color:#60a5fa;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#dbeafe;
+    line-height:1.8;
+}
+
+.card ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.card li{
+    margin:8px 0;
+}
+
+.video-container{
+    margin-top:30px;
+}
+
+.video-container video{
+    width:100%;
+    border-radius:15px;
+    background:#000;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:2.5rem;
+}
+
+nav{
+    flex-wrap:wrap;
+}
+
+.card{
+    padding:25px;
+}
+
+}
